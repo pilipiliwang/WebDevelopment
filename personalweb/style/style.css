@@ -1,0 +1,13 @@
+body {
+    background-color: #F6EEDF;
+}
+
+hr {
+    border-style: none;
+    border-top: 0.2cm dotted white;
+    width: 10%;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif ;
+}
