@@ -1,3 +1,10 @@
 img {
+    background-color: red;
+    position: absolute;
+    right: 50px;
+}
+
+div {
     background-color: antiquewhite;
+    position: relative;
 }
