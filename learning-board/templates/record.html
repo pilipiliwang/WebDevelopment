@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>record</title>
+</head>
+<body>
+    <!-- add a table here, titles are: Subject\Description\URLsources\DDl -->
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Description</th>
+            <th>URLsources</th>
+            <th>DDL</th>
+        </tr>
+        <!-- add a for loop here, to loop through the records -->
+        {% for record in records %}
+        <tr>
+            <td>{{ record.subject }}</td>
+            <td>{{ record.description }}</td>
+            <td>{{ record.url }}</td>
+            <td>{{ record.ddl }}</td>
+        </tr>
+        {% endfor %}
+         </table>
+
+    <!-- add a save and edit button function, user's can edit the table above -->
+    <form action="/save" method="post">
+        <input type="submit" value="Save">
+        </form>
+    <form action="/edit" method="post">
+        <input type="submit" value="Edit">
+        </form>   
+
+</body>
+</html>
