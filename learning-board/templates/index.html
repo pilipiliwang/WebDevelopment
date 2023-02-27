@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Homepage</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <style>
       /* add a background image to the webpage */
       body {
@@ -16,7 +19,7 @@
         font-size: 36px;
         margin: 40px 0 20px 0;
       }
-      a {
+      .logbtn {
         display: inline-block;
         padding: 20px 40px;
         background-color: lightgray;
@@ -27,7 +30,7 @@
       }
 
       /* add hover to a, and give it a nice style */
-      a:hover {
+      .logbtn:hover {
         background-color: gray;
         color: white;
       }
@@ -36,12 +39,34 @@
   </head>
   <body>
 
+    <nav class="navbar  navbar-expand-lg bg-light-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFh4PubOwWGVIXi0Vg7fFpliGODndMKcQI6Wbf1ilhWvxE_emPG5EsfOS8r10fS7EfqY&usqp=CAU" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          HappyCoding
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" aria-current="page" href="#">Contact</a>
+            <a class="nav-link" href="#">Board</a>
+            <a class="nav-link" href="#">login</a>
+            <a class="nav-link">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- put a 200*200 image on the top, the image be a little bit lower, and following h1 -->
-    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="200" height="200">
+    <img class="mt-4" src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="200" height="200">
     <h1>Welcome to the Computer Science Learning Site!</h1>
     <!-- jump into login.html when login button clicked -->
-    <a href="/login">Log In</a>
+    <a class="logbtn" href="/login">Log In</a>
     <!-- jump into record.html when record button clicked -->
-    <a href="/record">Record</a>
+    <a class="logbtn" href="/logout">Log Out</a>
+
+   
+
   </body>
 </html>

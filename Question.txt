@@ -1,0 +1,26 @@
+bootstrap需要放在最前面，往后放的style会覆盖前面的
+live-server,右击运行
+fonts.google.com
+https://fontawesome.com/ ------icon
+https://bootsnipp.com/ ------examples of bootstrap
+https://search.google.com/test/mobile-friendly
+
+
+TinDog-Start/index.html：
+/* 如果有inherit，修改child不管用？ */
+.nav-link {
+  padding: 0 20px 0 20px;
+}
+
+.carousel-indicators {
+  /* margin-bottom: -3 rem; 为什么这里设置margin-bottom不管用？ */
+  bottom: -3rem;
+}
+
+/* set card height as high as col; and put card on the center of col*/
+/* 为什么card不在中间，当col-md-12的时候就不在中间 */
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
