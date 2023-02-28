@@ -4,6 +4,8 @@ fonts.google.com
 https://fontawesome.com/ ------icon
 https://bootsnipp.com/ ------examples of bootstrap
 https://search.google.com/test/mobile-friendly
+https://www.canva.com/    ------绘制前端页面canvas
+sources-snippets-javascript
 
 
 TinDog-Start/index.html：
@@ -24,3 +26,4 @@ TinDog-Start/index.html：
   display: flex;
   flex-direction: column;
 }
+
